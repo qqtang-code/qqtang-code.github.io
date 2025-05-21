@@ -13,6 +13,11 @@
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)and (max-device-width: 600px)"
 		href="smallScreen.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<style>
+		.section {
+			margin-bottom: 10px; /* 控制每个条目之间的垂直间距 */
+		}
+	</style>
 	<!-- <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"> -->
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'"> -->
 	<!-- <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'"> -->
@@ -621,7 +626,8 @@
 		</tr>
 	</table>
 	<br />
-	<div style="margin-top: -0.6cm" id="biography">
+	
+	<div style="margin-top: 0cm" id="biography">
 		<h2>
 			<b>
 				<font face="Roboto" size=+3>📝 Biography </font>
@@ -638,43 +644,100 @@
 					- Before that, I obtained the Bachelor's degree in Software Engineering (2018-2022) from Soochow University (Rank 1/380,  Outstanding Graduate and Honorary Graduate).
 
 					<br><br>
-					- I was a research intern at NUWA Team, NLC Group in Microsoft Research Asia (MSRA) <img src='assets/icon/microsoft_logo.svg' style='width: 6em;'> (2023.01~2024.02) and Sora (Video Generation) Team in StepFun (2024.05~2024.09). At the internship, I was honored with the "Star of Tomorrow" by MSRA and my focus was on Multimodal Generation with LLMs [Pub: Visual ChatGPT, LayoutNUWA (ICLR-2024), and StrokeNUWA (ICML-2024)].
+					- I was a research intern at NUWA Team, NLC Group in Microsoft Research Asia (MSRA) <img src='assets/icon/microsoft_logo.svg' style='width: 6em;'> (2023.01~2024.02) and Sora (Video Foundation Model) Team in StepFun (2024.05~2024.09). At the internship, I was honored with the "Star of Tomorrow" by MSRA and my focus was on Multimodal Generation with LLMs [Pub: Visual ChatGPT, LayoutNUWA (ICLR-2024), and StrokeNUWA (ICML-2024)].
 
 					<br><br>
-					- Currently, my research lie at <b><u>Long Context Modeling and Generation</b></u>, including but not limited to <font face="Comic Sans MS" color="#00CCCC">Development of new architectures, Data engineering, Alignment via RL, Long-form reasoning, Multimodal understanding, etc</font>.
+					- Currently, my research lie at <b><u>Long Context Modeling and Generation</b></u>, including but not limited to <font face="Comic Sans MS" color="#00CCCC">Exploration of New Efficient Model Architectures, Long-context Alignment via RL, Long-form reasoning, Long Video Generation</font>.
 					
 					<br><br>
 					Check my <a href="#publications">publications</a> and <a href="assets/Zecheng_CV.pdf">CV (PDF)</a> for more information!
+
+					<br><br>
+					<span style="font-style: italic; color: orange;">Last Update: 2025-05-20 (github.io) 2024-09-30 (online CV)</span>
+
 				</font>
 			</p>
 		</div>
-		<div class="app" style="margin-top: -1.2em">
+		<div class="app" style="margin-top: -1em">
 			<div style="float:left;width:50%;">
 				<h2><b>
-						<font face="Roboto" size=+2>📚 Research Interests</font>
-					</b></h2>
-				<p>
-					<font size="4" face="Comic Sans MS">
-						&emsp;&emsp;<i class="fa fa-file-text-o"></i>
-						Large Language Model
-						<br><br>
-						&emsp;&emsp;<i class="fa fa-file-text-o"></i>
-						Long-context Understanding & Long-form Reasoning
-						<br><br>
-						&emsp;&emsp;<i class="fa fa-file-text-o"></i>
-						Multimodal generation
-						<br><br>
-						&emsp;&emsp;<i class="fa fa-file-text-o"></i>
-						Memory Compression & KV Cache
-					</font>
-				</p>
+					<font face="Roboto" size=+2>📚 Research Interests</font>
+				</b></h2>
+				<font size="4" face="Comic Sans MS">
+					<div class="section"></div>
+						<font size="4" face="Comic Sans MS">
+							<div class="section">
+								&emsp;&emsp;<i class="fa fa-file-text-o"></i> Large-scale Pretraining of Foundation Model Recipe
+							</div>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae"> Video Foundation Model: <a href="https://stepvideot2v.com/" target="_blank" style="text-decoration: underline; color: inherit;">StepT2V</a> (Github Star > 2.9K)</font>
+							<br>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae">Language Foundation Model: <a href="https://github.com/OpenNLG/OpenBA" target="_blank" style="text-decoration: underline; color: inherit;"> OpenBA V1 & V2</a></font>
+							<br><br>
+							
+							<div class="section">
+								&emsp;&emsp;<i class="fa fa-file-text-o"></i> Long-context Understanding & Long-form Reasoning
+							</div>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae"> Benchmark: <a href="https://arxiv.org/abs/2410.02115" target="_blank" style="text-decoration: underline; color: inherit;">L-CiteEval</a> (ACL 2025)</font>
+							<br>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae"> Long-context RL: <a href="https://arxiv.org/abs/2410.18533" target="_blank" style="text-decoration: underline; color: inherit;">LOGO</a> (ICML 2025)</font>
+							<br><br>
+
+							<div class="section">
+								&emsp;&emsp;<i class="fa fa-file-text-o"></i> Multimodal Generation
+							</div>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae"> Layout Generation: <a href="https://arxiv.org/abs/2303.04671" target="_blank" style="text-decoration: underline; color: inherit;">Visual ChatGPT</a> (Github Stars > 34.5K)</font>
+							<br>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae"> Layout Generation: <a href="https://github.com/ProjectNUWA/LayoutNUWA" target="_blank" style="text-decoration: underline; color: inherit;">LayoutNUWA</a> (ICLR 2024)</font>
+							<br>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae">SVG Generation: <a href="https://github.com/ProjectNUWA/StrokeNUWA" target="_blank" style="text-decoration: underline; color: inherit;"> StrokeNUWA</a> (ICML 2024)</font>
+							<br><br>
+							
+							<div class="section">
+								&emsp;&emsp;<i class="fa fa-file-text-o"></i> Efficient Model Architectures
+							</div>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae"> RNN-series: <a href="https://arxiv.org/abs/2410.15678" target="_blank" style="text-decoration: underline; color: inherit;">Global Mamba</a> (ACL 2025)</font>
+							<br>
+							&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
+							<font size="3" color="a9a9ae">Infinite Memory LLM: <a href="https://arxiv.org/abs/2408.16967" target="_blank" style="text-decoration: underline; color: inherit;"> MemLong</a> (Arxiv 2024)</font>
+						</font>
+					</div>
+				</font>
 			</div>
 			<div style="float:left;width:50%;">
 				<h2>
-					<font face="Roboto" size=+2>📖 Education</font>
+					<font face="Roboto" size=+2>📖 Education & Internship</font>
 				</h2>
-				<p>
+				<font size="4" face="Comic Sans MS">
 					<font size="4" face="Comic Sans MS">
+						&emsp;&emsp;<i class="fa fa-briefcase"></i>
+						Research Intern, <a href="https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1" target="_blank" style="text-decoration: underline; color: inherit;">Tongyi Qwen Lab</a>, 2025.02-current
+						<br>
+						<font size="3">&emsp;&emsp;&emsp;&emsp;</font>
+						<font size="4" color="a9a9ae">Generative Foundation Model</font>
+						<br><br>
+
+						&emsp;&emsp;<i class="fa fa-briefcase"></i>
+						Research Intern, <a href="https://platform.stepfun.com/" target="_blank" style="text-decoration: underline; color: inherit;">StepFun</a>, Sora Team, 2024.05~2024.09
+						<br>
+						<font size="3">&emsp;&emsp;&emsp;&emsp;</font>
+						<font size="4" color="a9a9ae">T2V Video Foundation Model Training</font>
+						<br><br>
+
+						&emsp;&emsp;<i class="fa fa-briefcase"></i>
+						Research Intern, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/" target="_blank" style="text-decoration: underline; color: inherit;">MSRA</a>, NLC Group, 2023.01~2024.02
+						<br>
+						<font size="3">&emsp;&emsp;&emsp;&emsp;</font>
+						<font size="4" color="a9a9ae">Research of Multimodal LLM</font>
+						<br><br>
+
 						&emsp;&emsp;<i class="fa fa-graduation-cap"></i>
 						Phd Student, Computer Science, 2022-current
 						<br>
@@ -688,127 +751,92 @@
 						<font size="4" color="a9a9ae">School of Computer Science, Soochow University</font>
 					</font>
 				<p>&emsp;&emsp;</p>
-				</p>
+				</div>
 			</div>
-
+			<div style="clear: both;"></div>
 		</div>
-		<br>
 	</div>
-	<!-- <h2><font face="Arial" size=+3>Research Interests</font></h2>
-	<hr/>
-	<p>
-		<font size="4">
-			&emsp;&emsp;<i class="fa fa-file-text-o"></i>
-			Natural Language Processing
-			<br><br>
-			&emsp;&emsp;<i class="fa fa-file-text-o"></i>
-			Reasoning
-			<br><br>
-			&emsp;&emsp;<i class="fa fa-file-text-o"></i>
-			<a href="https://github.com/Xnhyacinth/Long_Text_Modeling_Papers" target="_self">Long Context Modeling & Length Extrapolation</a>
-		</font>
-	</p>
-	<br> -->
-	<br />
-	<!-- 🔥 📒📝📖💻 📚 -->
-	&nbsp;&nbsp;&nbsp;&nbsp;
-	<br />
-	<!-- 🔥 📒📝📖💻 📚 -->
-	<!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
-	<div style="margin-top: -1em;">
+
+	
+	<div style="margin-top: 3em" id="news">
 		<h2>
 			<b>
 				<font face="Roboto" size=+3>🔥 News </font>
 			</b>
 		</h2>
-		<!-- <hr /> -->
 		<div class="divide"></div>
-		<ul>
-			<li>
-				<font size="4.5" face="Comic Sans MS">Oct, 2024. We release an efficient long-context alignment method <a href="https://arxiv.org/html/2410.18533v1" target="_self">LOGO — Long cOntext aliGnment via efficient preference Optimization</a></font> &nbsp; <div style="display: inline-block; margin-top:0.5%; width:50%">
-					
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<u><font size="4">Paper:</font></u>
-						<a href="https://arxiv.org/html/2410.18533v1">
-							<img alt="Static Badge" src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-						</a>
-					</div>
-					&nbsp;
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<u><font size="4">Project:</font></u>
-						<a href="https://github.com/ZetangForward/LCM_Stack">
-							<img alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f" style="height: 1em;">
-						</a>
-					</div>
-					&nbsp;
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<u><font size="4">Zhihu:</font></u>
-						<a href="https://zhuanlan.zhihu.com/p/2993874959">
-							<img alt="Static Badge" src="https://img.shields.io/badge/知乎-0079FF.svg?style=plastic&logo=zhihu&logoColor=white" style="height: 1em;">
-						</a>
-					</div>
-					
-				</div>
-			</li>
-			<br>
+			<ul>
+				<span style="font-family: 'Brush Script MT', cursive; font-size: 2em;">Good things take time. Wait and See.</span>
 
-			<li>
-				<font size="4.5" face="Comic Sans MS">Oct, 2024. We release a new multi-task long-context understanding with citation benchmark <a href="https://arxiv.org/abs/2410.02115" target="_self">L-CiteEval: Do Long-Context Models Truly Leverage Context for Responding?</a></font> &nbsp; <div style="display: inline-block; margin-top:0.5%; width:50%">
-					
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<u><font size="4">Paper:</font></u>
-						<a href="https://arxiv.org/abs/2410.02115">
-							<img alt="Static Badge" src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-						</a>
+				<!-- <li>
+					<font size="4.5" face="Comic Sans MS">Oct, 2024. We release an efficient long-context alignment method <a href="https://arxiv.org/html/2410.18533v1" target="_self">LOGO — Long cOntext aliGnment via efficient preference Optimization</a></font> &nbsp; <div style="display: inline-block; margin-top:0.5%; width:50%">
+						
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<u><font size="4">Paper:</font></u>
+							<a href="https://arxiv.org/html/2410.18533v1">
+								<img alt="Static Badge" src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
+							</a>
+						</div>
+						&nbsp;
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<u><font size="4">Project:</font></u>
+							<a href="https://github.com/ZetangForward/LCM_Stack">
+								<img alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f" style="height: 1em;">
+							</a>
+						</div>
+						&nbsp;
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<u><font size="4">Zhihu:</font></u>
+							<a href="https://zhuanlan.zhihu.com/p/2993874959">
+								<img alt="Static Badge" src="https://img.shields.io/badge/知乎-0079FF.svg?style=plastic&logo=zhihu&logoColor=white" style="height: 1em;">
+							</a>
+						</div>
+						
 					</div>
-					&nbsp;
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<u><font size="4">Project:</font></u>
-						<a href="https://github.com/ZetangForward/L-CITEEVAL">
-							<img alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f" style="height: 1em;">
-						</a>
-					</div>
-					&nbsp;
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<u><font size="4">Zhihu:</font></u>
-						<a href="https://zhuanlan.zhihu.com/p/817442176">
-							<img alt="Static Badge" src="https://img.shields.io/badge/知乎-0079FF.svg?style=plastic&logo=zhihu&logoColor=white" style="height: 1em;">
-						</a>
-					</div>
-					
-				</div>
-			</li>
-			<br>
+				</li> -->
+				<br>
 
-			<li>
-				<font size="4.5" face="Comic Sans MS">Oct, 2024. I gave a tutorial about <u> Long Context Modeling in LLMs: Advances and Challenges </u> in <a
-					href="http://tcci.ccf.org.cn/conference/2024/tutorials.php" target="_self">NLPCC2024 (Hangzhou, China, Nov 1, 2024)</a></font> &nbsp; <font size="4.5" face="Comic Sans MS">[<a href="https://github.com/ZetangForward/NLPCC2024-Long-context-modeling" target="_self">Slides</a>]</font>
-			</li>
-			<!-- <br>
-			<li>
-				<font size="4.5" face="Comic Sans MS">Jun, 2023. Graduated from NCEPU with honor: awarded <b
-						class="news">Outstanding Graduate</b> by Beijing
-					Ministry of
-					Education and by NCEPU!</font>
-			</li>
-			<br>
-			<li>
-				<font size="4.5" face="Comic Sans MS">Dec, 2022. Awarded <b class="news">National Scholarship</b> by Ministry
-					of Education!</font>
-			</li>
-			<br>
-			<li>
-				<font size="4.5" face="Comic Sans MS">Dec, 2021. Awarded <b class="news">National Scholarship</b> by Ministry
-					of Education!</font>
-			</li> -->
-		</ul>
-	</div>
+				<!-- <li>
+					<font size="4.5" face="Comic Sans MS">Oct, 2024. We release a new multi-task long-context understanding with citation benchmark <a href="https://arxiv.org/abs/2410.02115" target="_self">L-CiteEval: Do Long-Context Models Truly Leverage Context for Responding?</a></font> &nbsp; <div style="display: inline-block; margin-top:0.5%; width:50%">
+						
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<u><font size="4">Paper:</font></u>
+							<a href="https://arxiv.org/abs/2410.02115">
+								<img alt="Static Badge" src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
+							</a>
+						</div>
+						&nbsp;
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<u><font size="4">Project:</font></u>
+							<a href="https://github.com/ZetangForward/L-CITEEVAL">
+								<img alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f" style="height: 1em;">
+							</a>
+						</div>
+						&nbsp;
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<u><font size="4">Zhihu:</font></u>
+							<a href="https://zhuanlan.zhihu.com/p/817442176">
+								<img alt="Static Badge" src="https://img.shields.io/badge/知乎-0079FF.svg?style=plastic&logo=zhihu&logoColor=white" style="height: 1em;">
+							</a>
+						</div>
+						
+					</div>
+				</li> -->
+				<br>
+
+				<!-- <li>
+					<font size="4.5" face="Comic Sans MS">Oct, 2024. I gave a tutorial about <u> Long Context Modeling in LLMs: Advances and Challenges </u> in <a
+						href="http://tcci.ccf.org.cn/conference/2024/tutorials.php" target="_self">NLPCC2024 (Hangzhou, China, Nov 1, 2024)</a></font> &nbsp; <font size="4.5" face="Comic Sans MS">[<a href="https://github.com/ZetangForward/NLPCC2024-Long-context-modeling" target="_self">Slides</a>]</font>
+				</li> -->
+
+			</ul>
+		</div>
 
 	<br />
-	<div style="margin-top: -1em;" id="">
+	<div style="margin-top: 1em;" id="">
 		<h2>
 			<b>
-				<font face="Roboto" size=+3 id="publications">📒 Selected Publication</font>
+				<font face="Roboto" size=+3 id="publications">📒 Selected Publications</font>
 			</b> &nbsp;
 		</h2>
 		<div class="divide"></div>
@@ -819,13 +847,91 @@
 					Scholar</a> for more information! (* stands for equal contribution)
 			</font>
 		</p>
-		<!-- <br /> -->
+		<font size="4"><b>2025</b></font>
+			<ul>
+				<li>
+					<font size="4">
+						[ACL 2025 Long (CCF A)] <b>L-CiteEval: Do Long-Context Models Truly Leverage Context for Responding?</b>
+						<br>
+							<b class="myself"><font size=" 4" face=" Comic Sans MS">Zecheng Tang*</font></b>, Keyan Zhou*, Juntao Li, Baibei Ji, Jianye Hou, Min Zhang
+						<br/>
+					</font>
+					<div style="display: inline-block; margin-top:0.5%; width:50%">
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<a href="https://arxiv.org/abs/2410.02115">
+								<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
+									src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
+							</a>
+						</div>
+						&nbsp;
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<a href="https://github.com/ZetangForward/L-CITEEVAL">
+								<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
+									alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
+									style="height: 1em;">
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<font size="4">
+						[ACL 2025 Long (CCF A)] <b>Revealing and Mitigating the Local Pattern Shortcuts of Mamba</b>
+						<br>
+							Wangjie You*, <b class="myself"><font size=" 4" face=" Comic Sans MS">Zecheng Tang*</font></b>, Juntao Li, Lili Yao, Min Zhang
+					</br>
+					</font>
+					<div style="display: inline-block; margin-top:0.5%; width:50%">
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<a href="https://arxiv.org/abs/2410.15678">
+								<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
+									src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
+							</a>
+						</div>
+						&nbsp;
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<a href="https://github.com/ZetangForward/Global_Mamba">
+								<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
+									alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
+									style="height: 1em;">
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<font size="4">
+						[ICML 2025 (CCF A)] <b>LOGO -- Long cOntext aliGnment via efficient preference Optimization</b>
+						<br>	
+							<b class="myself"><font size=" 4" face=" Comic Sans MS">Zecheng Tang*</font></b>, Zechen Sun, Juntao Li, Qiaoming Zhu, Min Zhang
+						</br>
+					</font>
+					<div style="display: inline-block; margin-top:0.5%; width:50%">
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<a href="https://arxiv.org/abs/2410.18533">
+								<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
+									src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
+							</a>
+						</div>
+						&nbsp;
+						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+							<a href="https://github.com/ZetangForward/LCM_Stack">
+								<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
+									alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
+									style="height: 1em;">
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>	
+
 		<font size="4"><b>2024</b></font>
 			<ul>
 				
 				<li>
 					<font size="4">
-						[EMNLP 2024 (CCF B)] <b>CMD: a framework for Context-aware Model self-Detoxification</b>
+						[EMNLP 2024 Long (CCF B)] <b>CMD: a framework for Context-aware Model self-Detoxification</b>
 						<br/>
 						<b class="myself">Zecheng Tang</b>, Keyan Zhou, Juntao Li, Yuyang Ding, Pinzheng Wang, Yan Bowen, Renjie Hua, Min Zhang
 					</font>
@@ -840,31 +946,6 @@
 						&nbsp;
 						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
 							<a href="https://github.com/ZetangForward/CMD-Context-aware-Model-self-Detoxification">
-								<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
-									alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
-									style="height: 1em;">
-							</a>
-						</div>
-					</div>
-				</li>
-				
-				<li>
-					<font size="4">
-					[ACL 2024 Findings] <b>Rethinking Negative Instances for Generative Named Entity Recognition</b>
-					<br/>
-					Yuyang Ding, Juntao Li, Pinzheng Wang, <b class="myself">Zecheng Tang</b>, Bowen Yan, Min Zhang
-					</font>
-					<br>
-					<div style="display: inline-block; margin-top:0.5%; width:50%">
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<a href="https://arxiv.org/abs/2402.16602">
-								<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
-									src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-							</a>
-						</div>
-						&nbsp;
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<a href="https://github.com/yyDing1/GNER">
 								<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
 									alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
 									style="height: 1em;">
@@ -926,9 +1007,9 @@
 				<li>
 					<font size="4">
 					[ICLR 2024 (CAAI A)] <b>LayoutNUWA: Revealing the hidden layout expertise of large language models</b>
-					<br/>
-						<b class="myself">Zecheng Tang</b>, Chenfei Wu, Juntao Li, Nan Duan
 					<br>
+						<b class="myself">Zecheng Tang</b>, Chenfei Wu, Juntao Li, Nan Duan
+					<br/>
 				</font>
 					<div style="display: inline-block; margin-top:0.5%; width:50%">
 						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
@@ -947,38 +1028,12 @@
 						</div>
 					</div>
 				</li>
-
-				<li>
-					<font size="4">
-					[WSDM 2024 (CCF B)] <b>Towards Better Chinese Spelling Check for Search Engines: A New Dataset and Strong Baseline</b>
-					<br/>
-					Yue Wang, Zilong Zheng, <b class="myself">Zecheng Tang</b>, Juntao Li, Zhihui Liu, Kunlong Chen, Jinxiong Chang, Qishen Zhang, Zhongyi Liu, Min Zhang
-					<br>
-				</font>
-					<div style="display: inline-block; margin-top:0.5%; width:50%">
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<a href="https://dl.acm.org/doi/abs/10.1145/3616855.3635847">
-								<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
-									src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-							</a>
-						</div>
-						&nbsp;
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<a href="https://github.com/AlipaySEQ/AlipaySEQ">
-								<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
-									alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
-									style="height: 1em;">
-							</a>
-						</div>
-					</div>
-				</li>
 			</ul>
 		
 		<font size="4"><b>2023</b></font>
-		
 			<ul>
 				<li><font size="4">
-					[ACL 2023 (CCF A)] <b>Open-ended long text generation via masked language modeling</b>
+					[ACL 2023 Long (CCF A)] <b>Open-ended long text generation via masked language modeling</b>
 					<br/>
 					Xiaobo Liang*, <b class="myself"><font size=" 4" face=" Comic Sans MS">Zecheng Tang*</font></b>, Juntao Li, Min Zhang
 					<br>
@@ -1002,7 +1057,7 @@
 				</li>
 				
 				<li><font size="4">
-					[ACL 2023 Findings] <b>Bridging the Gap between Training and Inference for Diffusion Model</b>
+					[ACL 2023 Long (CCF A)] <b>Bridging the Gap between Training and Inference for Diffusion Model</b>
 					<br/>
 					<b class="myself"><font size=" 4" face=" Comic Sans MS">Zecheng Tang</font></b>, Pinzheng Wang, Keyan Zhou, Juntao Li, Ziqiang Cao, Min Zhang
 					<br>
@@ -1027,59 +1082,57 @@
 			</ul>
 		
 		<font size="4"><b>2022</b></font>
-
 			<ul>
-				<li><font size="4">
+				<li>
+				<font size="4">
 					[EMNLP 2022 (CCF B)] <b>Improving temporal generalization of pre-trained language models with lexical semantic change</b>
-					<br/>
 					Zhaochen Su*, <b class="myself"><font size=" 4" face=" Comic Sans MS">Zecheng Tang*</font></b>, Xinyan Guan, Juntao Li, Lijun Wu, Min Zhang
 					<br>
 				</font>
-					<div style="display: inline-block; margin-top:0.5%; width:50%">
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<a href="https://aclanthology.org/2022.emnlp-main.428/">
-								<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
-									src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-							</a>
-						</div>
-						&nbsp;
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<a href="https://github.com/zhaochen0110/LMLM">
-								<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
-									alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
-									style="height: 1em;">
-							</a>
-						</div>
+				<div style="display: inline-block; margin-top:0.5%; width:50%">
+					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+						<a href="https://aclanthology.org/2022.emnlp-main.428/">
+							<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
+								src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
+						</a>
 					</div>
+					&nbsp;
+					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
+						<a href="https://github.com/zhaochen0110/LMLM">
+							<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
+								alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
+								style="height: 1em;">
+						</a>
+					</div>
+				</div>
 				</li>
 			</ul>	
-		</font>
+
 		
-		<br />
+		<br/>
 
 		<h2>
 			<b>
-				<font face="Roboto" size=+3 id="preprint">📜 Preprint</font>
+				<font face="Roboto" size=+3 id="preprint">📜 Selected Preprints</font>
 			</b> &nbsp;
 		</h2>
 		<div class="divide"></div>
 		<ul>
 			<li><font size="4">
-				[Oct 2024] <b>LOGO — Long cOntext aliGnment via efficient preference Optimization</b>
+				[Feb 2025] <b>Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model</b>
 				<br/>
-					<b class="myself">Zecheng Tang</b>, Zechen Sun, Juntao Li, Qiaoming Zhu, Min Zhang
-				<br>
-			</font>
+				<b class="myself">Contributor*</b> (of Sora Video Foundation Model Team, StepFun)
+				</font><br>
 				<div style="display: inline-block; margin-top:0.5%; width:50%">
 					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<a href="https://arxiv.org/html/2410.18533v1">
+						<a href="https://arxiv.org/pdf/2502.10248">
 							<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
 								src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
 						</a>
 					</div>
 					&nbsp;
 					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<a href="https://github.com/ZetangForward/LCM_Stack">
+						<a href="https://github.com/stepfun-ai/Step-Video-T2V">
 							<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
 								alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
 								style="height: 1em;">
@@ -1087,52 +1140,7 @@
 					</div>
 				</div>
 			</li>
-			<li><font size="4">
-				[Oct 2024] <b>Revealing and Mitigating the Local Pattern Shortcuts of Mamba</b>
-				<br/>
-					Wangjie You, <b class="myself">Zecheng Tang*</b>, Juntao Li, Lili Yao, Min Zhang
-				<br>
-			</font>
-				<div style="display: inline-block; margin-top:0.5%; width:50%">
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<a href="https://arxiv.org/abs/2410.15678">
-							<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
-								src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-						</a>
-					</div>
-					&nbsp;
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<a href="https://github.com/ZetangForward/Global_Mamba">
-							<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
-								alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
-								style="height: 1em;">
-						</a>
-					</div>
-				</div>
-			</li>
-			<li><font size="4">
-				[Oct 2024] <b>L-CiteEval: Do Long-Context Models Truly Leverage Context for Responding?</b>
-				<br/>
-					<b class="myself">Zecheng Tang</b>,  Keyan Zhou, Juntao Li, Baibei Ji, Jianye Hou, Min Zhang
-				<br>
-			</font>
-				<div style="display: inline-block; margin-top:0.5%; width:50%">
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<a href="https://arxiv.org/abs/2410.02115">
-							<font size="5"><i class="ai ai-arxiv ai-1x"></i></font>&nbsp;<img alt="Static Badge"
-								src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-						</a>
-					</div>
-					&nbsp;
-					<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-						<a href="https://github.com/ZetangForward/L-CITEEVAL">
-							<font size="2"><i class="fa fa-github-alt  fa-2x" aria-hidden="true"></i></font>&nbsp;<img
-								alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f"
-								style="height: 1em;">
-						</a>
-					</div>
-				</div>
-			</li>
+			
 			<li><font size="4">
 				[Aug 2024] <b>MemLong: Memory-Augmented Retrieval for Long Text Modeling</b>
 				<br/>
@@ -1283,9 +1291,20 @@
 		<!-- <hr /> -->
 		<div class="divide"></div>
 		<ul>
-			<li><b>
-				<font size="4.5" face="Comic Sans MS">Conference Reviewing
-				</b>: ACL 2023, 2024; NeurIPS 2024; ICLR 2024; EMNLP 2023, 2024; AAAI 2023; ACL ARR</font>
+			<li>
+				<b>
+					<font size="4.5" face="Comic Sans MS">Conference Reviewing
+				</b>
+				: ACL/EMNLP 2023, 2024, 2025; ICML/NeurIPS/ICLR 2024, 2025; CVPR 2025; AAAI 2023, 2024; ACL ARR
+				</font>
+			</li>
+
+			<li>
+				<b>
+					<font size="4.5" face="Comic Sans MS">Area Chair
+				</b>
+				: NLPCC 2025 (CCF C)
+				</font>
 			</li>
 		</ul>
 	</div>
