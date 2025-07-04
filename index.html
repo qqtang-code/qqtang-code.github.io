@@ -17,6 +17,99 @@
 		.section {
 			margin-bottom: 10px; /* 控制每个条目之间的垂直间距 */
 		}
+		
+		/* 头像优化样式 */
+		.profile-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 3em;
+			max-width: 100%;
+			margin: 2em auto;
+			flex-wrap: wrap;
+		}
+		
+		.profile-image {
+			flex-shrink: 0;
+		}
+		
+		.profile-image img {
+			width: 240px;
+			height: 240px;
+			border-radius: 50%;
+			object-fit: cover;
+			box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+			border: 4px solid var(--color-bg);
+		}
+		
+		.profile-image img:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+		}
+		
+		.profile-info {
+			flex: 1;
+			min-width: 300px;
+			text-align: left;
+		}
+		
+		.profile-info h2 {
+			margin-bottom: 0.8em;
+			line-height: 1.3;
+		}
+		
+		.social-links {
+			display: flex;
+			gap: 1em;
+			flex-wrap: wrap;
+			margin-top: 1em;
+			justify-content: flex-start;
+		}
+		
+		.social-links a {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 48px;
+			height: 48px;
+			border-radius: 12px;
+			background: var(--color-btn);
+			transition: all 0.3s ease;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+		}
+		
+		.social-links a:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+			background: var(--color-link);
+		}
+		
+		.social-links a:hover i {
+			color: white !important;
+		}
+		
+		/* 响应式设计 */
+		@media (max-width: 768px) {
+			.profile-container {
+				flex-direction: column;
+				gap: 2em;
+				text-align: center;
+			}
+			
+			.profile-info {
+				text-align: center;
+			}
+			
+			.social-links {
+				justify-content: center;
+			}
+			
+			.profile-image img {
+				width: 200px;
+				height: 200px;
+			}
+		}
 	</style>
 	<!-- <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"> -->
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'"> -->
@@ -515,87 +608,64 @@
 	</nav>
 	<!-- <hr /> -->
 	<div class="divider"></div>
-	<table align="center">
-		<!-- <tr> -->
-		<td align="center"><a href="assets/img/my.jpg" target="_self"><img border=0 style="border-radius:10em;"
-					height="228em" src="assets/img/my.jpg"></a>
-		</td> 
-		<!-- height="218em" width="198em" -->
-		<td align="center">&nbsp</td>
-		<td align="center">&nbsp</td>
-		<td align="center">
-		<td align="center">
+	
+	<div class="profile-container">
+		<div class="profile-image">
+			<a href="assets/img/my.jpg" target="_self">
+				<img src="assets/img/my.jpg" alt="Quantong Qiu">
+			</a>
+		</div>
+		
+		<div class="profile-info">
 			<h2>
 				<font face="Roboto" size=+3>Quantong Qiu</font>&emsp;
 				<b>
 					<font face="宋体" size=+3>邱全通</font>
 				</b>
 			</h2>
+			
 			<p>
 				<font size=+1>
 					<font size=+2 face="Comic Sans MS">👨‍💻 MS Student @ <a href="https://opennlg.cn/" target="_self">OpenNLG Group</a></font><br/>
 					<font size=+2>🎓</font> <b><a href="https://scst.suda.edu.cn/" target="_self"> <font face="Comic Sans MS">SCST, Soochow University</font> </a></b>
-					<!-- <font face="Comic Sans MS">China</font> -->
 				</font>
 			</p>
-			<p style="margin-top: -0.4cm; margin-bottom: 0.2cm;">
+			
+			<p style="margin-top: -0.4cm; margin-bottom: 0.8cm;">
 				<font size=+1>
 					<font size=+2>📧</font> 
-					<i><b><a href="qtqiu@stu.suda.edu.cn"><font size=+1 face="Comic Sans MS">qtqiu@stu.suda.edu.cn</font></b></i></a>
+					<i><b><a href="mailto:qtqiu@stu.suda.edu.cn"><font size=+1 face="Comic Sans MS">qtqiu@stu.suda.edu.cn</font></b></i></a>
 				</font>
 			</p>
 
-			<div style="display: inline-block; margin-top:0%">
-				<a href="assets/QQTang_CV.pdf" target="_self">
-					<!-- <font size=7><i class="fa fa-user-circle" aria-hidden="true"></i></font> -->
-					<font size=4><i class="ai ai-cv ai-3x"></i></font>
+			<div class="social-links">
+				<!-- CV -->
+				<a href="assets/QQTang_CV.pdf" target="_self" title="CV">
+					<i class="ai ai-cv ai-2x"></i>
+				</a>
+				
+				<!-- Google Scholar -->
+				<a href="https://scholar.google.com/citations?user=-NrbKG0AAAAJ&hl=en" target="_self" title="Google Scholar">
+					<i class="ai ai-google-scholar ai-2x"></i>
+				</a>
+				
+				<!-- Semantic Scholar -->
+				<a href="https://www.semanticscholar.org/author/Quantong-Qiu/2362103644" target="_self" title="Semantic Scholar">
+					<i class="ai ai-semantic-scholar ai-2x"></i>
+				</a>
+				
+				<!-- DBLP -->
+				<a href="https://dblp.org/pid/407/9569" target="_self" title="DBLP">
+					<i class="ai ai-dblp ai-2x"></i>
+				</a>
+				
+				<!-- GitHub -->
+				<a href="https://github.com/qqtang-code" target="_self" title="GitHub">
+					<i class="fa fa-github fa-2x"></i>
 				</a>
 			</div>
-			&emsp;
-			<!-- Google Scholar -->
-			<div style="display: inline-block; margin-top:0%">
-				<a href="https://scholar.google.com/citations?user=-NrbKG0AAAAJ&hl=en" target="_self">
-					<font size=4><i class="ai ai-google-scholar ai-3x"></i></font>
-				</a>
-			</div>
-			<!-- <div style="display: inline-block; margin-right:0.0cm"">
-					<a href=" https://scholar.google.com.hk/citations?user=sRcWOKUAAAAJ&hl=zh-CN" target="_self">
-					<img src="assets/img/google-scholar-icon.png" alt="Google Scholar" title="Google Scholar" width="40px" />
-
-					</a>
-				</div> -->
-			&emsp;
-			<!-- Semantic Scholar -->
-			<div style="display: inline-block; margin-top:0%">
-				<a href="https://www.semanticscholar.org/author/Quantong-Qiu/2362103644" target="_self">
-					<font size=4><i class="ai ai-semantic-scholar ai-3x"></i></font>
-				</a>
-			</div>
-			<!-- <div class="cropped" style="display: inline-block;">
-					<a href=" https://www.semanticscholar.org/author/Huanxuan-Liao/2232817310" target="_self">
-						<img src="assets/img/semantic-scholar-icon.png" style="position:relative;top: 20px;"
-							alt="Semantic Scholar" title="Semantic Scholar" width="220px" />
-					</a>
-				</div> -->
-			&emsp;
-			<!-- DBLP -->
-			<div style="display: inline-block; margin-top:0%">
-				<a href="https://dblp.org/pid/407/9569" target="_self">
-					<font size=4><i class="ai ai-dblp ai-3x"></i></font>
-				</a>
-			</div>
-			&emsp;
-			<!-- GitHub -->
-			<div style="display: inline-block; margin-bottom:0.0cm">
-				<a href="https://github.com/qqtang-code" target="_self">
-					<font size=4><i class="fa fa-github fa-3x" class="dy" aria-hidden="true"></i>
-					</font>
-				</a>
-			</div>
-		</td>
-		</td>
-		</tr>
-	</table>
+		</div>
+	</div>
 	<br />
 	
 	<div style="margin-top: 0cm" id="biography">
@@ -679,11 +749,6 @@
 			<div style="float:left;width:50%;">
 				<h2><font face="Roboto" size=+2>📖 Education & Internship</font></h2>
 				<font size="4" face="Comic Sans MS" style="color: var(--color-ch);">
-					<!-- &emsp;&emsp;<font size="4"><i class="fa fa-briefcase"></i> Research Intern, <a href="https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1" target="_blank" style="text-decoration: underline; color: inherit;">Tongyi Qwen Lab</a>, 2025.02-current</font>
-					<br>
-					<font size="3">&emsp;&emsp;&emsp;&emsp;</font>
-					<font size="4" color="a9a9ae">Generative Foundation Model</font>
-					<br><br> -->
 					&emsp;&emsp;<font size="4"><i class="fa fa-briefcase"></i> Research Intern, <a href="https://opendatalab.github.io/index.html" target="_blank" style="text-decoration: underline; color: inherit;">Shanghai AI Lab</a>, 2024.10~2025.03</font>
 					<br>
 					<font size="3">&emsp;&emsp;&emsp;&emsp;</font>
@@ -728,66 +793,7 @@
 			<ul>
 				<span style="font-family: 'Brush Script MT', cursive; font-size: 2em;">Good things take time. Wait and See.</span>
 
-				<!-- <li>
-					<font size="4.5" face="Comic Sans MS">Oct, 2024. We release an efficient long-context alignment method <a href="https://arxiv.org/html/2410.18533v1" target="_self">LOGO — Long cOntext aliGnment via efficient preference Optimization</a></font> &nbsp; <div style="display: inline-block; margin-top:0.5%; width:50%">
-						
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<u><font size="4">Paper:</font></u>
-							<a href="https://arxiv.org/html/2410.18533v1">
-								<img alt="Static Badge" src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-							</a>
-						</div>
-						&nbsp;
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<u><font size="4">Project:</font></u>
-							<a href="https://github.com/QQTang/LCM_Stack">
-								<img alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f" style="height: 1em;">
-							</a>
-						</div>
-						&nbsp;
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<u><font size="4">Zhihu:</font></u>
-							<a href="https://zhuanlan.zhihu.com/p/2993874959">
-								<img alt="Static Badge" src="https://img.shields.io/badge/知乎-0079FF.svg?style=plastic&logo=zhihu&logoColor=white" style="height: 1em;">
-							</a>
-						</div>
-						
-					</div>
-				</li> -->
 				<br>
-
-				<!-- <li>
-					<font size="4.5" face="Comic Sans MS">Oct, 2024. We release a new multi-task long-context understanding with citation benchmark <a href="https://arxiv.org/abs/2410.02115" target="_self">L-CiteEval: Do Long-Context Models Truly Leverage Context for Responding?</a></font> &nbsp; <div style="display: inline-block; margin-top:0.5%; width:50%">
-						
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<u><font size="4">Paper:</font></u>
-							<a href="https://arxiv.org/abs/2410.02115">
-								<img alt="Static Badge" src="https://img.shields.io/badge/Arxiv-f0ad4e" style="height: 1em;">
-							</a>
-						</div>
-						&nbsp;
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<u><font size="4">Project:</font></u>
-							<a href="https://github.com/QQTang/L-CITEEVAL">
-								<img alt="Static Badge" src="https://img.shields.io/badge/Code/data-d9534f" style="height: 1em;">
-							</a>
-						</div>
-						&nbsp;
-						<div style="display: inline-block; margin-top:0%; margin-left: -1.1%;">
-							<u><font size="4">Zhihu:</font></u>
-							<a href="https://zhuanlan.zhihu.com/p/817442176">
-								<img alt="Static Badge" src="https://img.shields.io/badge/知乎-0079FF.svg?style=plastic&logo=zhihu&logoColor=white" style="height: 1em;">
-							</a>
-						</div>
-						
-					</div>
-				</li> -->
-				<br>
-
-				<!-- <li>
-					<font size="4.5" face="Comic Sans MS">Oct, 2024. I gave a tutorial about <u> Long Context Modeling in LLMs: Advances and Challenges </u> in <a
-						href="http://tcci.ccf.org.cn/conference/2024/tutorials.php" target="_self">NLPCC2024 (Hangzhou, China, Nov 1, 2024)</a></font> &nbsp; <font size="4.5" face="Comic Sans MS">[<a href="https://github.com/QQTang/NLPCC2024-Long-context-modeling" target="_self">Slides</a>]</font>
-				</li> -->
 
 			</ul>
 		</div>
