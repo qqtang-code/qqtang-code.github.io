@@ -146,10 +146,6 @@
 			background: linear-gradient(135deg, #C0C0C0, #A0A0A0);
 		}
 		
-		.honor-prize {
-			background: linear-gradient(135deg, #FF6B35, #F7931E);
-		}
-		
 		.award-date {
 			color: #666;
 			font-size: 0.95em;
@@ -221,15 +217,16 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png"> -->
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="180x180" href="assets/icon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="assets/icon/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="assets/icon/android-chrome-512x512.png">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Q</text></svg>">
+	<link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Q</text></svg>">
+	<link rel="icon" type="image/png" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Q</text></svg>">
+	<link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Q</text></svg>">
+	<link rel="icon" type="image/png" sizes="192x192" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Q</text></svg>">
+	<link rel="icon" type="image/png" sizes="512x512" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Q</text></svg>">
 	<link rel="manifest" href="icon/manifest.json">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="assets/icon/favicon-32x32.pngg">
+	<meta name="msapplication-TileImage" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Q</text></svg>">
 	<meta name="theme-color" content="#ffffff">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 	<title>Quantong Qiu | Homepage</title>
@@ -767,7 +764,7 @@
 
 					- Before that, I obtained the Bachelor's degree in Software Engineering from Jiangxi University of Finance and Economics. During my undergraduate studies, I won more than ten national-level awards in Computer Science Category A competitions recognized by the Ministry of Education, and received honors including Outstanding Undergraduate Thesis and Outstanding Student Pacesetter.
 					<br><br>
-					- Currently, my research focuses on <b><u>Efficient Inference for Large Language Models</b></u>, including but not limited to <font face="Comic Sans MS" color="#00CCCC">KV Cache Compression, Sparse Attention, and Model Optimization</font>.
+					- Currently, my research focuses on <b><u>Efficient Inference for Large Language Models</b></u>, including but not limited to <font face="Comic Sans MS" color="#00CCCC">KV Cache Optimization, Sparse Attention, and Model Optimization</font>.
 					
 					<br><br>
 					Check my <a href="#publications">publications</a> and <a href="assets/quantong_CV.pdf">CV (PDF)</a> for more information!
@@ -784,46 +781,27 @@
 				<h2><font face="Roboto" size=+2>📚 Research Interests</font></h2>
 				<font size="4" face="Comic Sans MS" style="color: var(--color-ch);">
 					<div class="section">
-						&emsp;&emsp;<font size="4"><i class="fa fa-file-text-o"></i> Large-scale Pretraining of Foundation Model</font>
+						&emsp;&emsp;<font size="4"><i class="fa fa-file-text-o"></i> KV Cache Optimization</font>
 					</div>
 					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae"> Video Foundation Model: <a href="https://stepvideot2v.com/" target="_blank" style="text-decoration: underline; color: inherit;">StepT2V</a> (Github Star > 2.9K)</font>
+					<font size="3" color="a9a9ae"> Quantization: <a href="https://arxiv.org/abs/2505.10938" target="_blank" style="text-decoration: underline; color: inherit;">OTT</a> (ACL 2025 Long Main)</font>
 					<br>
 					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae">Language Foundation Model: <a href="https://github.com/OpenNLG/OpenBA" target="_blank" style="text-decoration: underline; color: inherit;"> OpenBA V1 & V2</a> (SCIS 2024)</font>
-					<br><br>
-					
-					<div class="section">
-						&emsp;&emsp;<font size="4"><i class="fa fa-file-text-o"></i> Long-context Understanding & Long-form Reasoning</font>
-					</div>
-					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae"> Benchmark: <a href="https://arxiv.org/abs/2410.02115" target="_blank" style="text-decoration: underline; color: inherit;">L-CiteEval</a> (ACL 2025)</font>
-					<br>
-					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae"> Long-context RL: <a href="https://arxiv.org/abs/2410.18533" target="_blank" style="text-decoration: underline; color: inherit;">LOGO</a> (ICML 2025)</font>
+					<font size="3" color="a9a9ae">KV Cache Eviction: <a href="https://github.com/OpenNLG/OpenBA" target="_blank" style="text-decoration: underline; color: inherit;"> CaliDrop</a> (NIPS 2025)</font>
 					<br><br>
 
 					<div class="section">
-						&emsp;&emsp;<font size="4"><i class="fa fa-file-text-o"></i> Multimodal Generation</font>
+						&emsp;&emsp;<font size="4"><i class="fa fa-file-text-o"></i> AI Infrastructure</font>
 					</div>
 					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae"> Omini Prototype: <a href="https://arxiv.org/abs/2303.04671" target="_blank" style="text-decoration: underline; color: inherit;">Visual ChatGPT</a> (Github Star > 34.5K)</font>
-					<br>
-					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae"> Layout Generation: <a href="https://github.com/ProjectNUWA/LayoutNUWA" target="_blank" style="text-decoration: underline; color: inherit;">LayoutNUWA</a> (ICLR 2024)</font>
-					<br>
-					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae">SVG Generation: <a href="https://github.com/ProjectNUWA/StrokeNUWA" target="_blank" style="text-decoration: underline; color: inherit;"> StrokeNUWA</a> (ICML 2024)</font>
+					<font size="3" color="a9a9ae"> Long Sequence Infrastructure: <a href="https://github.com/LCM-Lab/LOOM-Scope" target="_blank" style="text-decoration: underline; color: inherit;">LOOM-Scope</a> (Github Star > 100)</font>
 					<br><br>
 					
 					<div class="section">
 						&emsp;&emsp;<font size="4"><i class="fa fa-file-text-o"></i> Efficient Model Architectures</font>
 					</div>
 					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae"> RNN-series: <a href="https://arxiv.org/abs/2410.15678" target="_blank" style="text-decoration: underline; color: inherit;">Global Mamba</a> (ACL 2025)</font>
-					<br>
-					&emsp;&emsp;&emsp;&emsp;<i class="fa fa-angle-right" style="color: #888;"></i> 
-					<font size="3" color="a9a9ae">Infinite Memory LLM: <a href="https://arxiv.org/abs/2408.16967" target="_blank" style="text-decoration: underline; color: inherit;"> MemLong</a> (Arxiv 2024)</font>
+					<font size="3" color="a9a9ae"> Sparse Attention: <a href="https://arxiv.org/abs/2410.15678" target="_blank" style="text-decoration: underline; color: inherit;">Wait~~~~~</a> (ICML 2026)</font>
 				</font>
 			</div>
 			<div style="float:left;width:50%;">
